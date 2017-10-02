@@ -1,0 +1,14 @@
+[
+  {
+    "remote":	"github",
+    "repository": "BlissRoms-Kernels/android_kernel_moto_shamu",
+    "target_path": "kernel/moto/shamu",
+    "revision": "p9.0"
+  },
+  {
+    "remote":	"github",
+    "repository": "camcory/proprietary_vendor_motorola",
+    "target_path": "vendor/moto",
+    "revision": "p"
+  }
+]
