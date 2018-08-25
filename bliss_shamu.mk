@@ -24,15 +24,21 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit bliss vendor
 $(call inherit-product, vendor/bliss/config/common.mk)
 
+# Inherit AOSP device configuration for shamu.
+$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := bliss_shamu
-PRODUCT_BRAND := Google
+PRODUCT_DEVICE := shamu
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
-TARGET_VENDOR := moto
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
-$(call inherit-product, device/moto/shamu/device.mk)
-$(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
-
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=shamu \
+    BUILD_FINGERPRINT=google/shamu/shamu:7.0/NBD91U/3408911:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 7.0 NBD91U 3408911 release-keys"
