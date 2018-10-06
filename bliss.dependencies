@@ -7,8 +7,8 @@
   },
   {
     "remote":	"github",
-    "repository": "BlissRoms-vendor/proprietary_vendor_motorola",
+    "repository": "BlissRoms-Vendor/proprietary_vendor_motorola",
     "target_path": "vendor/moto",
-    "revision": "p9.0
+    "revision": "p9.0"
   }
 ]
