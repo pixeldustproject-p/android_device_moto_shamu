@@ -42,3 +42,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
     BUILD_FINGERPRINT=google/shamu/shamu:7.0/NBD91U/3408911:user/release-keys \
     PRIVATE_BUILD_DESC="shamu-user 7.0 NBD91U 3408911 release-keys"
+
+#Apps
+PRODUCT_PACKAGES += \
+    Camera2 \
+    Gallery2 \
+    Music \
+    Calendar \
+    DeskClock \
+    Email 
