@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/BCM4356A2_001.003.015.0077.0214_ORC.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4354A2.hcd
 
+#Camera App
+PRODUCT_PACKAGES += \
+    Camera2
+
 #Camera
 PRODUCT_PACKAGES += \
     libqomx_core \

@@ -49,5 +49,4 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     Music \
     Calendar \
-    DeskClock \
-    Email 
+    DeskClock
