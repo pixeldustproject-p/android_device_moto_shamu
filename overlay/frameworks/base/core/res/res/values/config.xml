@@ -403,4 +403,24 @@
     <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">250</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
+
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
+    <string name="default_wallpaper_component" translatable="false">com.ustwo.lwp/com.ustwo.lwp.wallpapers.timelapse.TimelapseWallpaperService</string>
+
+    <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't handle wallpaper cropping. -->
+    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
+
+    <!-- Default SMS Application. This will be the default SMS application when the phone first boots. The user can then change the default app to one of their choosing.
+         This can be overridden for devices where a different default SMS application is desired. If this string is empty or the specified package does not exist, then
+         the platform will search for an SMS app and use that (if there is one)-->
+    <string name="default_sms_application" translatable="false">com.google.android.apps.messaging</string>
+
+    <!-- Component name for the activity that will be presenting the Recents UI, which will receive special permissions for API related to fetching and presenting recent tasks.
+	 The default configuration uses Launcehr3QuickStep as default launcher and points to the corresponding recents component. When using a different default launcher,
+         change this appropriately or use the default systemui implementation: com.android.systemui/.recents.RecentsActivity -->
+    <string name="config_recentsComponentName" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+
 </resources>
