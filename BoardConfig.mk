@@ -134,6 +134,10 @@ BOARD_HAS_AUDIO_DSP := true
 
 USE_DEVICE_SPECIFIC_CAMERA:= true
 
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/bin/mm-qcamera-daemon=25
+
+
 # Disable dex-preopt of prebuilts to save space.
 DONT_DEXPREOPT_PREBUILTS := true
 
