@@ -38,3 +38,4 @@ allow mpdecision self:capability sys_nice;
 
 allow mpdecision sysfs_socinfo:dir search;
 allow mpdecision sysfs_socinfo:file { read open getattr };
+allow mpdecision self:capability dac_override;

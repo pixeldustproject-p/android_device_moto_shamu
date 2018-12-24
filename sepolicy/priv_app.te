@@ -3,3 +3,21 @@ unix_socket_connect(priv_app, adspd, adspd)
 
 allow priv_app adspd_data_file:dir r_dir_perms;
 allow priv_app adspd_data_file:file r_file_perms;
+
+allow priv_app bluetooth_prop:file read;
+allow priv_app bootloader_boot_reason_prop:file read;
+allow priv_app boottime_prop:file read;
+allow priv_app ctl_bootanim_prop:file read;
+allow priv_app ctl_bugreport_prop:file read;
+allow priv_app ctl_console_prop:file read;
+allow priv_app ctl_default_prop:file read;
+allow priv_app ctl_dumpstate_prop:file read;
+allow priv_app proc:file { read open };
+allow priv_app sysfs:dir { read open };
+allow priv_app sysfs:file read;
+allow priv_app proc:file getattr;
+allow priv_app sysfs:file open;
+allow priv_app sysfs:file getattr;
+allow priv_app sysfs_mac_address:file { read open };
+allow priv_app sysfs_mac_address:file getattr;
+

@@ -46,3 +46,9 @@ userdebug_or_eng(`
   allow rild diag_device:chr_file rw_file_perms;
 ')
 dontaudit rild diag_device:chr_file rw_file_perms;
+
+allow rild proc:file { read open };
+
+allow rild init:dir search;
+allow rild init:file { read open };
+allow rild init:file getattr;

@@ -57,3 +57,5 @@ allow mdm_helper dropbox_data_file:file create_file_perms;
 
 # write radio properties
 set_prop(mdm_helper, radio_prop)
+
+allow mdm_helper self:capability { dac_override dac_read_search };

@@ -7,3 +7,17 @@ allow system_app cne_service:service_manager add;
 allow system_app selinuxfs:file r_file_perms;
 
 unix_socket_connect(system_app, cnd, cnd)
+
+allow system_app proc_pagetypeinfo:file read;
+allow system_app wificond:binder call;
+
+allow system_app proc_pagetypeinfo:file open;
+allow system_app proc_pagetypeinfo:file getattr;
+
+allow system_app perfprofd:binder call;
+
+allow system_app bootloader_boot_reason_prop:file read;
+allow system_app boottime_prop:file read;
+allow system_app ctl_bootanim_prop:file read;
+allow system_app ctl_console_prop:file read;
+allow system_app ctl_dumpstate_prop:file read;

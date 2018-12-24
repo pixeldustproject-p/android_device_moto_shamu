@@ -1,1 +1,3 @@
 allow kernel self:capability net_admin;
+allow kernel init:process noatsecure;
+allow kernel self:security setenforce;

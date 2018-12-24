@@ -1,0 +1,5 @@
+allow nfc bluetooth_prop:file read;
+allow nfc bootloader_boot_reason_prop:file read;
+allow nfc boottime_prop:file read;
+allow nfc ctl_bootanim_prop:file read;
+allow nfc ctl_bugreport_prop:file read;
