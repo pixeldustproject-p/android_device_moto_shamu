@@ -1,6 +1,0 @@
-allow shared_relro bluetooth_prop:file read;
-allow shared_relro bootloader_boot_reason_prop:file read;
-allow shared_relro boottime_prop:file read;
-allow shared_relro ctl_bootanim_prop:file read;
-allow shared_relro ctl_bugreport_prop:file read;
-

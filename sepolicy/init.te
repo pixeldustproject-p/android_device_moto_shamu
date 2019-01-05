@@ -24,24 +24,3 @@ allow init {
 allow init diag_device:chr_file unlink;
 allow init userdata_block_device:blk_file rw_file_perms;
 allow init cache_block_device:blk_file rw_file_perms;
-allow init proc:file read;
-allow init adspd:process { noatsecure };
-allow init proc:file open;
-allow init sysfs:file { setattr write open };
-allow init proc:file getattr;
-
-allow init bootstat:process noatsecure;
-allow init fsck:process noatsecure;
-allow init hal_light_default:process noatsecure;
-allow init hal_nfc_default:process noatsecure;
-allow init hal_thermal_default:process noatsecure;
-allow init hal_vibrator_default:process noatsecure;
-allow init hwservicemanager:process noatsecure;
-allow init logd:process noatsecure;
-allow init netd:process noatsecure;
-allow init tzdatacheck:process noatsecure;
-allow init ueventd:process noatsecure;
-allow init vdc:process noatsecure;
-allow init vendor_init:process noatsecure;
-allow init vold:process noatsecure;
-allow init zygote:process noatsecure;

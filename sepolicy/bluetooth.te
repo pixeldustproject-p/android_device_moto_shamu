@@ -1,6 +1,0 @@
-allow bluetooth bootloader_boot_reason_prop:file read;
-allow bluetooth boottime_prop:file read;
-allow bluetooth ctl_bootanim_prop:file read;
-allow bluetooth ctl_bugreport_prop:file read;
-allow bluetooth ctl_console_prop:file read;
-allow bluetooth ctl_default_prop:file read;

@@ -39,6 +39,3 @@ userdebug_or_eng(`
   allow thermald diag_device:chr_file rw_file_perms;
 ')
 dontaudit thermald diag_device:chr_file rw_file_perms;
-
-allow thermald self:capability dac_override;
-

@@ -1,5 +1,0 @@
-allow surfaceflinger default_android_service:service_manager add;
-allow surfaceflinger sysfs:dir { read open };
-allow surfaceflinger default_android_service:service_manager find;
-allow surfaceflinger sysfs:file { read open };
-

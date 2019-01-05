@@ -16,10 +16,3 @@ allow radio ims:unix_stream_socket connectto;
 
 # Access RCS properties
 set_prop(radio, rcs_prop)
-
-allow radio bluetooth_prop:file read;
-allow radio bootloader_boot_reason_prop:file read;
-allow radio boottime_prop:file read;
-allow radio ctl_bootanim_prop:file read;
-allow radio ctl_bugreport_prop:file read;
-
