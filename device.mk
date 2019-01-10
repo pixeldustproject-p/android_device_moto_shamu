@@ -199,7 +199,9 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-   telephony-ext
+    ims-ext-common \
+    telephony-ext \
+    qti-telephony-common
 
 PRODUCT_BOOT_JARS += \
    telephony-ext
