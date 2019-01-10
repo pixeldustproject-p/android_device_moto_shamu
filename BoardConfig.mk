@@ -91,6 +91,15 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_HW_DISK_ENCRYPTION := false
 TARGET_CRYPTFS_HW_PATH := device/moto/shamu/cryptfs_hw
 
+# Camera
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/bin/mm-qcamera-daemon=25
+USE_DEVICE_SPECIFIC_CAMERA:= true
+
+# Charger
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 TARGET_TOUCHBOOST_FREQUENCY := 1500
 TARGET_USERIMAGES_USE_EXT4 := true
 
@@ -110,9 +119,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
-# Charger
-BOARD_CHARGER_ENABLE_SUSPEND := true
-
 TARGET_RECOVERY_FSTAB = device/moto/shamu/rootdir/etc/fstab.shamu
 
 # Support Native Layer RF cutback
@@ -130,11 +136,10 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
 BOARD_HAS_AUDIO_DSP := true
 
-USE_DEVICE_SPECIFIC_CAMERA:= true
-
-TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
-    /system/bin/mm-qcamera-daemon=25
-
+# Manifests
+DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
+DEVICE_MANIFEST_FILE := device/moto/shamu/manifest.xml
+DEVICE_MATRIX_FILE := device/moto/shamu/compatibility_matrix.xml
 
 # Disable dex-preopt of prebuilts to save space.
 DONT_DEXPREOPT_PREBUILTS := true
@@ -143,9 +148,6 @@ DONT_DEXPREOPT_PREBUILTS := true
 LZMA_RAMDISK_TARGETS := recovery
 
 TARGET_FS_CONFIG_GEN += device/moto/shamu/config.fs
-
-DEVICE_MANIFEST_FILE := device/moto/shamu/manifest.xml
-DEVICE_MATRIX_FILE := device/moto/shamu/compatibility_matrix.xml
 
 # gralloc1 bits
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
