@@ -45,7 +45,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #Apps
 PRODUCT_PACKAGES += \
-    Camera2 \
     Gallery2 \
     Music \
     Calendar \
