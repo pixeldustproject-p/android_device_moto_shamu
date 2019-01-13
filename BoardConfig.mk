@@ -39,7 +39,6 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-TARGET_KERNEL_CLANG_COMPILE := false
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -150,8 +149,5 @@ DEVICE_MATRIX_FILE := device/moto/shamu/compatibility_matrix.xml
 
 # gralloc1 bits
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
-
-# LLVM
-TARGET_USE_SDCLANG := true
 
 -include vendor/moto/shamu/BoardConfigVendor.mk
