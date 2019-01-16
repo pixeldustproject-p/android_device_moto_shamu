@@ -138,8 +138,8 @@ BOARD_HAS_AUDIO_DSP := true
 
 # Manifests
 DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
-DEVICE_MANIFEST_FILE := device/moto/shamu/manifest.xml
-DEVICE_MATRIX_FILE := device/moto/shamu/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/moto/shamu/manifests/manifest.xml
+DEVICE_MATRIX_FILE := device/moto/shamu/manifests/compatibility_matrix.xml
 
 # Disable dex-preopt of prebuilts to save space.
 DONT_DEXPREOPT_PREBUILTS := true
